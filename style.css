@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+body {
+  background-color:rgb(249, 238, 223);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 880px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+.results,
+.tools {
+  width: 600px;
+  height: 70px;
+  background: #c7b198;
+  padding: 5px 10px;
+  padding-top:10px ;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.results span {
+  font-weight: 600;
+  font-size: 25px;
+  color: lightyellow;
+}
+.results{
+  height:90px;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  align-items: center;
+  border-radius: 15px;
+  gap: 5px;
+  padding: 20px 0px;
+}
+.cell {
+  background: #596e79;
+  color: #c7b198;
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 90px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.restart {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: filter 0.15s ease-in-out;
+
+}
+.restart:hover {
+background: rgb(249, 238, 223);
+  filter: brightness(90%);
+
+}
+
+.player1,
+.player2,
+.draws {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 500;
+}
+
+.symbols {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.turn {
+  font-size: 25px;
+  padding-top: 4px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.message {
+  color: #c7b198;
+  position: absolute;
+  height: 30%;
+  min-height: 300px;
+  width: 100%;
+  background-color: #3b4952;
+  z-index: 2;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #19375b;
+  border-bottom: 1px solid #19375b;
+  box-shadow: 0 10px 20px black;
+
+}
+
+.closeBtn {
+  right: 30px;
+  top: 20px;
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.content h1{
+  color:  rgb(249, 238, 223);
+
+}
+
+
+
+
